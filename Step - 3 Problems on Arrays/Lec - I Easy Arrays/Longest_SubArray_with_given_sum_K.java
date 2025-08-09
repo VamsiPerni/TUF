@@ -224,7 +224,8 @@ public class Longest_SubArray_with_given_sum_K {
 // --------------------------------------------------------------------
 
 // Method - III :- Optimal Approach (Two Pointers , greedy approach) , for all
-// the test cases including o to n number of positive integers
+// the test cases including o to n number of positive integers , it will not
+// work for the negative numbers
 // Time Complexity :- O()
 // Space Comlpexity :- O()
 
