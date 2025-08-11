@@ -108,19 +108,34 @@
 // --------------------------------------------------------------------------------------
 
 // Method - II :- Optimal Approach , Using Dutch National Flag Algorithm
-// Time Complexity :- O()
-// Space Comlpexity :- O()
+// Time Complexity :- O(n)
+// Space Comlpexity :- O(1)
 
 import java.util.*; // TUF
 
 public class Sort_Colors_75 {
 
+    public static void swap(int[] nums, int a, int b) {
+        int temp = nums[a];
+        nums[a] = nums[b];
+        nums[b] = temp;
+    }
+
     public static void sortColors(int[] nums) {
         int size = nums.length;
-        int cnt0 = 0, cnt1 = 0, cnt2 = 0;
+        int low = 0, mid = 0, high = size - 1;
 
-        for (int i = 0; i < size; i++) {
-
+        while (mid <= high) {
+            if (nums[mid] == 0) {
+                swap(nums, mid, low);
+                mid++;
+                low++;
+            } else if (nums[mid] == 1) {
+                mid++;
+            } else {
+                swap(nums, mid, high);
+                high--;
+            }
         }
 
         System.out.print("[");
