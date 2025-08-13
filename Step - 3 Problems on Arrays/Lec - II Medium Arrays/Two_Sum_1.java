@@ -7,11 +7,11 @@
 
 // ----------------------------------------------------------------------------------------
 
-// Method - I :- Brute Froce (Using two nested for loops)
-// Time Complexity :- O(n2) nearly about n2 but we can say it as n2
+// Method - I :- Brute Force (Using two nested for loops)
+// Time Complexity :- O(n2) nearly about n2 but we need to take it as n2
 // Space Comlpexity :- 
 
-// SELF  - EASY CAN DO
+// SELF  - CAN DO IT EASILY 
 
 // ----------------------------------------------------------------------------------------
 

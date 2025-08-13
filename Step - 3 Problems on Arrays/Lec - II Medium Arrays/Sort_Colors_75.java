@@ -1,7 +1,7 @@
 
 // --------------------------------------------------------------------------------------
 
-// Method - I :- Brute Force Approach (not uses library function but used , instead of that we can use any sorting algorithm and do it , best sorting technique is of using merge sort )
+// Method - I :- Brute Force Approach (do not use library function and need to solve the problem but i have used to ease the porblem without doing the sorting algo once again , instead of that we can use any sorting algorithm and do it , best sorting technique is of using merge sort )
 // Time Complexity :- O(n logn)  if we used merge sort 
 // Space Comlpexity :- O(n)
 
