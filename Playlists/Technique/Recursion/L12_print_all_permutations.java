@@ -1,6 +1,6 @@
 // -------------------------------------------------------------------------------------
 
-// 46. Permutations
+// 46. Permutations , Here in the question it is mentioned that permutations can be in any order not in lexicogrpahical order but still we the input which we are passing the array is in sorted order for generating all the permutations then we will get in lexicographical order itself  
 
 // Method - I :- Brute Force Approach (By using recursion )
 // Time Complexity :-O(n!) * O(n) => O(n!) {for generating all the permutations} * O(n) {for iteratiing everytime from 0 to (n-1)}
