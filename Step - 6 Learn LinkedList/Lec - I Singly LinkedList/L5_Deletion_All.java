@@ -76,35 +76,95 @@ public class L5_Deletion_All {
         return head;
     }
 
-    // Delete Kth Element of the LinkedList
+    // TUF - Delete Kth Element of the LinkedList
     public static Node deleteKElement(Node head, int k) {
         // self
-        Node temp = head;
-        int count = 1;
+        // Node temp = head;
+        // int count = 1;
 
-        if (head == null || temp.next == null) {
-            return null;
-        }
+        // if (head == null || temp.next == null) {
+        // return null;
+        // }
+
+        // if (k == 1) {
+        // head = head.next;
+        // return head;
+        // }
+
+        // while (temp != null) {
+
+        // if (k == count + 1 && temp.next.next != null) {
+        // temp.next = temp.next.next;
+        // } else if (k == count + 1) {
+        // temp.next = null;
+        // }
+
+        // temp = temp.next;
+        // count++;
+        // }
+
+        // TUF - optimal
+
+        if (head == null)
+            return head;
 
         if (k == 1) {
             head = head.next;
             return head;
         }
 
-        while (temp != null) {
+        int count = 1;
+        Node temp = head.next;
+        Node prev = head;
 
-            if (k == count + 1 && temp.next.next != null) {
-                temp.next = temp.next.next;
-            } else if (k == count + 1) {
-                temp.next = null;
+        while (temp != null) {
+            count++;
+
+            if (k == count) {
+                prev.next = prev.next.next;
+                return head;
             }
 
+            prev = temp;
             temp = temp.next;
-            count++;
         }
 
         return head;
 
+    }
+
+    // TUF - Delete {particular value node} from the Linked List
+    public static Node deleteValue(Node head, int val) {
+
+        if (head == null) {
+            System.out.println("\nNo elements in LL");
+            return head;
+        }
+
+        if (head.data == val) {
+            head = head.next;
+            System.out.println("\nElement deleted successfully\nCurrent list is");
+            display(head);
+            return head;
+        }
+
+        Node temp = head;
+        Node prev = null;
+
+        while (temp != null) {
+
+            if (temp.data == val) {
+                prev.next = prev.next.next;
+                System.out.println("\nElement deleted successfully\nCurrent list is");
+                display(head);
+                return head;
+            }
+
+            prev = temp;
+            temp = temp.next;
+        }
+
+        return head;
     }
 
     public static void main(String[] args) {
@@ -113,6 +173,7 @@ public class L5_Deletion_All {
 
         System.out.println("Enter numbers to insert in LL , {-1} stop the entering");
 
+        // Insertion till -1 entered
         while (sc.hasNextInt()) {
             int val = sc.nextInt();
 
@@ -125,13 +186,11 @@ public class L5_Deletion_All {
         display(head);
 
         // head delete
-
         // head = deleteHead(head);
         // System.out.println("\nLL after deletion of head ");
         // display(head);
 
         // tail delete
-
         // head = deleteTail(head);
         // System.out.println("\nLL after deletion of TAIL ");
         // display(head);
@@ -141,6 +200,10 @@ public class L5_Deletion_All {
         head = deleteKElement(head, k);
         System.out.println("\nAfter Deleting {Kth} Element");
         display(head);
+
+        // Delete {particular value node} from the Linked List // testcases- 5,6,7
+        // int val = sc.nextInt();
+        // head = deleteValue(head, val);
 
         sc.close();
     }
