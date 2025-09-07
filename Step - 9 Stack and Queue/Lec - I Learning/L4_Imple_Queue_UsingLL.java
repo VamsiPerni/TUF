@@ -1,9 +1,9 @@
 // -------------------------------------------------------------------------------------
 
-// Method - I :-
+// Method - I :- Implement Queue Using LinkedList
 
-// Time Complexity :- 
-// Space Comlpexity :-
+// Time Complexity :- O(1) for all the operations
+// Space Comlpexity :- O() dynamic space not constant
 
 import java.util.Scanner;
 
