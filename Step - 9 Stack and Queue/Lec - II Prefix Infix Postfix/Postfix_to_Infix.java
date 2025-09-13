@@ -8,16 +8,6 @@
 import java.util.*;
 
 public class Postfix_to_Infix {
-    public static int priority(char ch) {
-        if (ch == '^')
-            return 3;
-        else if (ch == '*' || ch == '/')
-            return 2;
-        else if (ch == '+' || ch == '-')
-            return 1;
-        else
-            return -1;
-    }
 
     public static String postfixToInfix(String str) {
         int i = 0;
