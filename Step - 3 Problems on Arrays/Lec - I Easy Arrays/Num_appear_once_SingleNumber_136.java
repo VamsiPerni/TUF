@@ -28,7 +28,7 @@
 
 // Method - II :- Better Approach - I (Using Hashing but it only works for postive numbers and limited size of array (not for more numbers))
 // Time Complexity :- O(n)   
-// Space Comlpexity :- O(1)
+// Space Comlpexity :- O(n+1)
 
 // import java.util.*;
 
