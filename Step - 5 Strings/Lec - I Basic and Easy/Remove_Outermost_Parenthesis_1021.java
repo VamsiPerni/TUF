@@ -1,3 +1,12 @@
+// -------------------------------------------------------------------------------------
+// Desc :-
+// Below code steps in detailed understanding ->
+
+// Method - I :- Brute Force
+
+// Time Complexity :- O(n)
+// Space Comlpexity :- O(1)
+
 import java.util.*;
 
 public class Remove_Outermost_Parenthesis_1021 {
